@@ -15,12 +15,12 @@ function init() {
         .prompt([
             {
                 type: 'input',
-                message: 'What is your name of your repo?',
+                message: 'What is the name of your repo?',
                 name: 'title',
             },
             {
                 type: 'input',
-                message: 'What is the desription?',
+                message: 'What is the description?',
                 name: 'description',
             },
             {
@@ -56,6 +56,22 @@ function init() {
 # ${response.title}
 ## Description
 ${response.description}
+## Table of Contents
+* [Usage](#usage)
+* [License](#license)
+* [Contributors](#contributors)
+* [Tests](#test)
+* [Questions](#questions)
+## Usage
+${response.usage}
+## License
+${response.license}
+## Contributors
+${response.contributors}
+## Tests
+${response.tests}
+## Questions
+${response.questions}
 `
             console.log(readme)
 
